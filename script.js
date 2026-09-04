@@ -48,12 +48,10 @@ const profileFallback = document.getElementById('profileFallback');
 
 if (profileImg) {
   profileImg.addEventListener('error', () => {
-    profileImg.style.display     = 'none';
+    profileImg.style.display      = 'none';
     profileFallback.style.display = 'flex';
   });
 }
-
-/* ── Active nav link on scroll ── */
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
@@ -76,20 +74,3 @@ updateActiveNav();
 
 /* ── Dots grid: generate dots programmatically ── */
 // Already done via CSS background-image – no JS needed.
-
-/* ── Smooth reveal for hero elements already animated via CSS keyframes ── */
-// Hero section uses CSS @keyframes with animation-fill-mode:both,
-// so no JS needed for hero animations.
-
-/* ── Lazy-load profile image ── */
-if (profileImg && profileImg.hasAttribute('src')) {
-  const src = profileImg.getAttribute('src');
-  profileImg.removeAttribute('src');
-  const img = new Image();
-  img.onload  = () => { profileImg.src = src; };
-  img.onerror = () => {
-    profileImg.style.display      = 'none';
-    profileFallback.style.display = 'flex';
-  };
-  img.src = src;
-}
