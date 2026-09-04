@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramalakshmi J – Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">RJ<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero Section ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-text" data-animate="fade-left">
+        <span class="hero-greeting">Hi, I'm</span>
+        <h1 class="hero-name">RAMALAKSHMI</h1>
+        <p class="hero-title">CS Graduate &amp; Aspiring Full Stack Developer</p>
+        <p class="hero-desc">
+          I build responsive, user-friendly web applications and AI-powered
+          solutions that solve real-world problems.
+        </p>
+        <div class="hero-buttons">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> View My Projects
+          </a>
+          <a href="mailto:jramalakshmi3021@gmail.com" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Hire Me
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:jramalakshmi3021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Image + Tech Badges -->
+      <div class="hero-visual" data-animate="fade-right">
+
+        <!-- Floating tech badges -->
+        <div class="badge badge-php">PHP</div>
+        <div class="badge badge-mysql"><i class="fas fa-database"></i> MySQL</div>
+        <div class="badge badge-react"><i class="fab fa-react"></i> React</div>
+        <div class="badge badge-js">JS</div>
+
+        <!-- Code snippet floaters -->
+        <div class="code-snippet snippet-1"><span class="code-tag">&lt;div</span> <span class="code-attr">class</span>=<span class="code-str">"hero"</span><span class="code-tag">&gt;</span></div>
+        <div class="code-snippet snippet-2"><span class="code-kw">const</span> dev = <span class="code-str">"Rama"</span>;</div>
+
+        <!-- Decorative ring -->
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+            <img src="profile.jpg" alt="Ramalakshmi J" class="profile-img" id="profileImg" />
+            <!-- Fallback avatar shown if image fails -->
+            <div class="profile-fallback" id="profileFallback">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative dots grid -->
+        <div class="dots-grid" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span><span></span>
+    </a>
+  </section>
+
+  <!-- ─── About Section ─── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio -->
+        <div class="about-bio" data-animate="fade-up">
+          <p>
+            Hi! My name is <strong>Ramalakshmi J</strong>, a Computer Science graduate passionate
+            about web development and software engineering.
+          </p>
+          <p>
+            I enjoy designing clean web applications with intuitive features and transforming
+            ideas into real-world solutions.
+          </p>
+          <p>
+            I have completed my Bachelor's degree in Computer Science and will be pursuing a
+            <strong>Master of Computer Applications (MCA)</strong> starting in August 2026.
+            I continue to enhance my skills through full-stack development projects, internships,
+            and continuous learning.
+          </p>
+        </div>
+
+        <!-- Personal Details Cards -->
+        <div class="about-details" data-animate="fade-up" style="--delay: 0.15s">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-user"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Name</span>
+              <span class="detail-value">Ramalakshmi J</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Tirunelveli, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Email</span>
+              <a href="mailto:jramalakshmi3021@gmail.com" class="detail-value detail-link">
+                jramalakshmi3021@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="detail-info">
+              <span class="detail-label">Degree</span>
+              <span class="detail-value">B.Sc. Computer Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education Section ─── -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- MCA -->
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-icon"><i class="fas fa-university"></i></div>
+              <div class="tc-meta">
+                <span class="tc-period">Aug 2026 – Present</span>
+                <span class="tc-badge badge-current">Current</span>
+              </div>
+            </div>
+            <h3 class="tc-degree">Master of Computer Applications <span class="tc-short">(MCA)</span></h3>
+            <p class="tc-institution">
+              <i class="fas fa-map-marker-alt"></i>
+              Karpagam Academy of Higher Education, Coimbatore
+            </p>
+          </div>
+        </div>
+
+        <!-- BSc -->
+        <div class="timeline-item" data-animate="fade-up" style="--delay: 0.1s">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="tc-meta">
+                <span class="tc-period">Completed – 2026</span>
+              </div>
+            </div>
+            <h3 class="tc-degree">Bachelor of Science in Computer Science</h3>
+            <p class="tc-institution">
+              <i class="fas fa-map-marker-alt"></i>
+              St. John's College, Tirunelveli
+            </p>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="timeline-item" data-animate="fade-up" style="--delay: 0.2s">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-icon"><i class="fas fa-school"></i></div>
+              <div class="tc-meta">
+                <span class="tc-period">2021 – 2023</span>
+              </div>
+            </div>
+            <h3 class="tc-degree">Higher Secondary Education <span class="tc-short">– Computer Science</span></h3>
+            <p class="tc-institution">
+              <i class="fas fa-map-marker-alt"></i>
+              Child Jesus Girls' Higher Secondary School, Tirunelveli
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience Section ─── -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Professional</span>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-grid">
+
+        <!-- Internship 1 -->
+        <div class="exp-card" data-animate="fade-up">
+          <div class="exp-card-top">
+            <div class="exp-icon-wrap">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="exp-tag">Internship</div>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Web Developer Intern</h3>
+            <div class="exp-company">
+              <i class="fas fa-building"></i> Iconix Solution
+            </div>
+            <div class="exp-location">
+              <i class="fas fa-map-marker-alt"></i> Tirunelveli Junction, Tirunelveli
+            </div>
+            <div class="exp-year">
+              <i class="fas fa-calendar-alt"></i> 2025
+            </div>
+            <p class="exp-desc">
+              Gained hands-on experience in web development, working on responsive
+              interfaces and front-end solutions in a professional environment.
+            </p>
+          </div>
+          <div class="exp-card-footer">
+            <span class="exp-skill-tag">HTML/CSS</span>
+            <span class="exp-skill-tag">JavaScript</span>
+            <span class="exp-skill-tag">PHP</span>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="exp-card" data-animate="fade-up" style="--delay: 0.15s">
+          <div class="exp-card-top">
+            <div class="exp-icon-wrap">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="exp-tag">Internship</div>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Web Developer Intern</h3>
+            <div class="exp-company">
+              <i class="fas fa-building"></i> Indalyxo Solution
+            </div>
+            <div class="exp-location">
+              <i class="fas fa-map-marker-alt"></i> Thiyagaraja Nagar, Tirunelveli
+            </div>
+            <div class="exp-year">
+              <i class="fas fa-calendar-alt"></i> 2026
+            </div>
+            <p class="exp-desc">
+              Contributed to web development projects, building and maintaining
+              web application features using modern development practices.
+            </p>
+          </div>
+          <div class="exp-card-footer">
+            <span class="exp-skill-tag">React</span>
+            <span class="exp-skill-tag">MySQL</span>
+            <span class="exp-skill-tag">Web Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Ramalakshmi J. Crafted with <i class="fas fa-heart"></i> and code.</p>
+      <div class="footer-social">
+        <a href="mailto:jramalakshmi3021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
