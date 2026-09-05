@@ -335,13 +335,92 @@ button { cursor: pointer; border: none; background: none; }
   transform: translateY(-2px);
 }
 
-/* ── Hero Visual ── */
+/* ── Hero Visual wrapper ── */
 .hero-visual {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* extra padding so badges outside the ring don't get clipped */
+  padding: 60px 80px;
   animation: fadeSlideRight .9s .2s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── Tech badge base style (matches reference: pill card) ── */
+.tech-badge {
+  position: absolute;
+  font-family: var(--font-sans);
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .5rem 1.1rem;
+  border-radius: 50px;
+  background: #ffffff;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 6px 24px rgba(2,132,199,.13), 0 2px 8px rgba(0,0,0,.06);
+  color: var(--text);
+  z-index: 5;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  animation: floatBadge1 4s ease-in-out infinite;
+  letter-spacing: .01em;
+}
+.tech-badge i {
+  font-size: 1rem;
+}
+
+/* ─── Scattered positions matching reference design ─── */
+
+/* PHP — left side, vertically centred */
+.tb-php {
+  left: -10px;
+  top: 33%;
+  color: #7377AD;
+  animation-delay: 0s;
+}
+
+/* HTML — upper-left, above the ring */
+.tb-html {
+  left: 5%;
+  top: 4%;
+  color: #E34F26;
+  animation-delay: 0.6s;
+}
+
+/* MySQL — lower-right */
+.tb-mysql {
+  right: -10px;
+  bottom: 22%;
+  color: #00618A;
+  animation-delay: 1.2s;
+}
+
+/* React — upper-right */
+.tb-react {
+  right: 2%;
+  top: 8%;
+  color: #0284C7;
+  animation-delay: 1.8s;
+}
+
+/* CSS — lower-left */
+.tb-css {
+  left: 4%;
+  bottom: 12%;
+  color: #264DE4;
+  animation-delay: 2.4s;
+}
+
+/* JavaScript — bottom-center, below the ring */
+.tb-js {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  color: #B45309;
+  background: #FFFBEB;
+  border-color: #FDE68A;
+  animation-delay: 3s;
 }
 
 /* Profile ring */
@@ -379,64 +458,6 @@ button { cursor: pointer; border: none; background: none; }
   background: var(--primary-light);
 }
 .profile-img.error + .profile-fallback { display: flex; }
-
-/* Floating tech badges */
-.badge {
-  position: absolute;
-  font-family: var(--font-sans);
-  font-size: .75rem;
-  font-weight: 600;
-  padding: .42rem .9rem;
-  border-radius: 30px;
-  background: #fff;
-  box-shadow: 0 4px 18px rgba(2,132,199,.12);
-  border: 1px solid var(--border);
-  color: var(--text);
-  z-index: 5;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: .38rem;
-  animation: floatBadge1 4s ease-in-out infinite;
-}
-/* Individual positions */
-.badge-php   { top: 8%;    left: -16%; animation-delay: 0s;   color: #6E5494; }
-.badge-mysql { bottom: 20%; left: -14%; animation-delay: .7s;  color: #00618A; }
-.badge-react { top: 6%;    right: -14%; animation-delay: 1.3s; color: #0284C7; }
-.badge-js    { bottom: 12%; right: -8%; animation-delay: 1.9s; color: #D4A017; background: #FFFBEB; border-color: #FDE68A; }
-
-/* HTML & CSS tech pills — positioned top/bottom center */
-.tech-pill {
-  position: absolute;
-  font-family: var(--font-sans);
-  font-size: .75rem;
-  font-weight: 600;
-  padding: .42rem .9rem;
-  border-radius: 30px;
-  background: #fff;
-  box-shadow: 0 4px 18px rgba(2,132,199,.12);
-  border: 1px solid var(--border);
-  z-index: 5;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: .38rem;
-  animation: floatBadge1 4s ease-in-out infinite;
-}
-.pill-html {
-  top: -6%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #E34F26;
-  animation-delay: 2.4s;
-}
-.pill-css {
-  bottom: -4%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #264DE4;
-  animation-delay: 3s;
-}
 
 /* Dots grid */
 .dots-grid {
@@ -837,12 +858,12 @@ button { cursor: pointer; border: none; background: none; }
   .hero-visual { order: 1; }
   .hero-desc { max-width: 100%; }
   .profile-ring { width: 260px; height: 300px; }
-  .badge-php   { top: 5%;    left: 0%; }
-  .badge-mysql { bottom: 5%; left: 2%; }
-  .badge-react { top: 5%;    right: 0%; }
-  .badge-js    { bottom: 5%; right: 5%; }
-  .snippet-1   { left: -5%; }
-  .snippet-2   { right: -3%; }
+  .tb-php   { left: 0;   top: 30%; }
+  .tb-html  { left: 5%;  top: 4%; }
+  .tb-mysql { right: 0;  bottom: 20%; }
+  .tb-react { right: 2%; top: 6%; }
+  .tb-css   { left: 4%;  bottom: 10%; }
+  .tb-js    { bottom: 0; }
 
   .about-grid   { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-details{ grid-template-columns: 1fr 1fr; }
@@ -877,5 +898,5 @@ button { cursor: pointer; border: none; background: none; }
   .timeline::before { left: 20px; }
   .timeline-marker { width: 46px; }
   .footer-inner { justify-content: center; text-align: center; }
-  .tech-pill { display: none; }
+  .tech-badge { font-size: .68rem; padding: .35rem .7rem; }
 }
