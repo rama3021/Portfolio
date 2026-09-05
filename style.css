@@ -113,6 +113,7 @@ button { cursor: pointer; border: none; background: none; }
   font-weight: 800;
   color: var(--primary);
   letter-spacing: -1px;
+  text-decoration: none;
 }
 .nav-logo .dot { color: var(--accent); }
 

@@ -52,6 +52,8 @@ if (profileImg) {
     profileFallback.style.display = 'flex';
   });
 }
+
+/* ── Active nav link on scroll ── */
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
