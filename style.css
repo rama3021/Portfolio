@@ -383,10 +383,10 @@ button { cursor: pointer; border: none; background: none; }
 /* Floating tech badges */
 .badge {
   position: absolute;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: .75rem;
   font-weight: 600;
-  padding: .45rem .9rem;
+  padding: .42rem .9rem;
   border-radius: 30px;
   background: #fff;
   box-shadow: 0 4px 18px rgba(2,132,199,.12);
@@ -394,34 +394,49 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--text);
   z-index: 5;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: .38rem;
   animation: floatBadge1 4s ease-in-out infinite;
 }
-.badge i { margin-right: 4px; }
-.badge-php   { top: 12%;    left: -14%;  animation-delay: 0s;   color: #7377AD; }
-.badge-mysql { bottom: 22%; left: -10%;  animation-delay: .8s;  color: #00618A; }
-.badge-react { top: 10%;    right: -10%; animation-delay: 1.4s; color: #0284C7; }
-.badge-js    { bottom: 14%; right: -4%;  animation-delay: 2s;   background: #E0F2FE; color: #0369A1; }
+/* Individual positions */
+.badge-php   { top: 8%;    left: -16%; animation-delay: 0s;   color: #6E5494; }
+.badge-mysql { bottom: 20%; left: -14%; animation-delay: .7s;  color: #00618A; }
+.badge-react { top: 6%;    right: -14%; animation-delay: 1.3s; color: #0284C7; }
+.badge-js    { bottom: 12%; right: -8%; animation-delay: 1.9s; color: #D4A017; background: #FFFBEB; border-color: #FDE68A; }
 
-/* Code snippets */
-.code-snippet {
+/* HTML & CSS tech pills — positioned top/bottom center */
+.tech-pill {
   position: absolute;
-  font-family: var(--font-mono);
-  font-size: .7rem;
-  padding: .4rem .7rem;
-  background: rgba(15,23,42,.88);
-  color: #e2e8f0;
-  border-radius: 8px;
-  backdrop-filter: blur(4px);
+  font-family: var(--font-sans);
+  font-size: .75rem;
+  font-weight: 600;
+  padding: .42rem .9rem;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(2,132,199,.12);
+  border: 1px solid var(--border);
   z-index: 5;
   white-space: nowrap;
-  animation: floatBadge1 5s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  gap: .38rem;
+  animation: floatBadge1 4s ease-in-out infinite;
 }
-.snippet-1 { top: 38%; left: -18%; animation-delay: .5s; }
-.snippet-2 { bottom: 28%; right: -12%; animation-delay: 1.8s; }
-.code-tag  { color: #7dd3fc; }
-.code-attr { color: #93c5fd; }
-.code-str  { color: #86efac; }
-.code-kw   { color: #38bdf8; }
+.pill-html {
+  top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #E34F26;
+  animation-delay: 2.4s;
+}
+.pill-css {
+  bottom: -4%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #264DE4;
+  animation-delay: 3s;
+}
 
 /* Dots grid */
 .dots-grid {
@@ -862,5 +877,5 @@ button { cursor: pointer; border: none; background: none; }
   .timeline::before { left: 20px; }
   .timeline-marker { width: 46px; }
   .footer-inner { justify-content: center; text-align: center; }
-  .code-snippet { display: none; }
+  .tech-pill { display: none; }
 }
