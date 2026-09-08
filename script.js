@@ -1,5 +1,5 @@
 /* ===================================================
-   Ramalakshmi J – Portfolio  |  script.js
+   Ramalakshmi J – Portfolio  |  script.js  v3
    =================================================== */
 
 /* ── Navbar scroll effect ── */
@@ -16,8 +16,6 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   navLinks.classList.toggle('open');
 });
-
-// Close menu on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
@@ -26,26 +24,22 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 /* ── Scroll-triggered entrance animations ── */
-const animatedEls = document.querySelectorAll('[data-animate]');
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // fire once
+        observer.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.10, rootMargin: '0px 0px -40px 0px' }
 );
-
-animatedEls.forEach(el => observer.observe(el));
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 
 /* ── Profile image fallback ── */
 const profileImg      = document.getElementById('profileImg');
 const profileFallback = document.getElementById('profileFallback');
-
 if (profileImg) {
   profileImg.addEventListener('error', () => {
     profileImg.style.display      = 'none';
@@ -54,25 +48,61 @@ if (profileImg) {
 }
 
 /* ── Active nav link on scroll ── */
-const sections = document.querySelectorAll('section[id]');
+const sections   = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
 function updateActiveNav() {
   let current = '';
   sections.forEach(sec => {
-    const top = sec.offsetTop - 100;
-    if (window.scrollY >= top) current = sec.id;
+    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
   });
   navAnchors.forEach(a => {
-    a.style.color = '';
-    if (a.getAttribute('href') === `#${current}`) {
-      a.style.color = 'var(--primary)';
-    }
+    a.classList.remove('active');
+    if (a.getAttribute('href') === `#${current}`) a.classList.add('active');
   });
 }
-
 window.addEventListener('scroll', updateActiveNav, { passive: true });
 updateActiveNav();
 
-/* ── Dots grid: generate dots programmatically ── */
-// Already done via CSS background-image – no JS needed.
+/* ── Lightbox ── */
+const lightbox        = document.getElementById('lightbox');
+const lightboxImg     = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+
+function openLightbox(src, caption) {
+  lightboxImg.src        = src;
+  lightboxImg.alt        = caption;
+  lightboxCaption.textContent = caption;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => { lightboxImg.src = ''; }, 300);
+}
+
+// Close lightbox on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+/* ── Contact form (demo handler) ── */
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const btn     = e.target.querySelector('.form-submit');
+  const success = document.getElementById('formSuccess');
+
+  btn.disabled   = true;
+  btn.innerHTML  = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+
+  // Simulate async send (replace with real backend / EmailJS)
+  setTimeout(() => {
+    btn.innerHTML  = '<i class="fas fa-paper-plane"></i> Send Message';
+    btn.disabled   = false;
+    success.classList.add('show');
+    e.target.reset();
+    setTimeout(() => success.classList.remove('show'), 5000);
+  }, 1500);
+}

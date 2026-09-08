@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramalakshmi J – Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
@@ -16,13 +16,9 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <!-- SVG logo: teardrop shape with RJ initials + wordmark -->
         <svg class="nav-logo-svg" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="RJ Logo">
-          <!-- Teardrop / chat-bubble shape -->
           <path d="M22 0C10.4 0 1 9.4 1 21C1 32.6 10.4 42 22 42C26.2 42 30.1 40.7 33.3 38.5L43 50L43 21C43 9.4 33.6 0 22 0Z" fill="#0284C7"/>
-          <!-- R glyph -->
           <text x="7" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">R</text>
-          <!-- J glyph -->
           <text x="24" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">J</text>
         </svg>
         <span class="nav-logo-text">RJ<span class="nav-logo-dot">.</span>PORT</span>
@@ -32,6 +28,10 @@
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -39,68 +39,45 @@
     </div>
   </nav>
 
-  <!-- ─── Hero Section ─── -->
+  <!-- ─── Hero ─── -->
   <section class="hero" id="hero">
     <div class="hero-container">
-
-      <!-- Left: Text Content -->
       <div class="hero-text" data-animate="fade-left">
         <span class="hero-greeting">Hi, I'm</span>
         <h1 class="hero-name">RAMALAKSHMI</h1>
         <p class="hero-title">CS Graduate &amp; Aspiring Full Stack Developer</p>
-        <p class="hero-desc">
-          I build responsive, user-friendly web applications and AI-powered
-          solutions that solve real-world problems.
-        </p>
+        <p class="hero-desc">I build responsive, user-friendly web applications and AI-powered solutions that solve real-world problems.</p>
         <div class="hero-buttons">
-          <a href="#experience" class="btn btn-primary">
-            <i class="fas fa-briefcase"></i> View My Projects
-          </a>
-          <a href="mailto:jramalakshmi3021@gmail.com" class="btn btn-outline">
-            <i class="fas fa-paper-plane"></i> Hire Me
-          </a>
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase"></i> View My Projects</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
         </div>
         <div class="hero-social">
           <a href="mailto:jramalakshmi3021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ramalakshmi-j" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/rama3021" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
 
-      <!-- Right: Profile Image + Tech Badges -->
       <div class="hero-visual" data-animate="fade-right" style="position:relative; padding:60px 80px;">
-
-        <!-- 6 floating tech badges arranged around profile image -->
-        <div class="tech-badge tb-php"  style="position:absolute; top:33%;   left:-10px;        background:#fff; border:1.5px solid #E2E8F0; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#7377AD;"><i class="fab fa-php"></i> PHP</div>
-        <div class="tech-badge tb-html" style="position:absolute; top:4%;    left:5%;           background:#fff; border:1.5px solid #E2E8F0; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#E34F26;"><i class="fab fa-html5"></i> HTML</div>
-        <div class="tech-badge tb-mysql"style="position:absolute; bottom:22%; right:-10px;       background:#fff; border:1.5px solid #E2E8F0; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#00618A;"><i class="fas fa-database"></i> MySQL</div>
-        <div class="tech-badge tb-react"style="position:absolute; top:8%;    right:2%;          background:#fff; border:1.5px solid #E2E8F0; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#0284C7;"><i class="fab fa-react"></i> React</div>
-        <div class="tech-badge tb-css"  style="position:absolute; bottom:12%; left:4%;          background:#fff; border:1.5px solid #E2E8F0; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#264DE4;"><i class="fab fa-css3-alt"></i> CSS</div>
-        <div class="tech-badge tb-js"   style="position:absolute; bottom:0;   left:50%; transform:translateX(-50%); background:#FFFBEB; border:1.5px solid #FDE68A; border-radius:50px; padding:.5rem 1.1rem; display:flex; align-items:center; gap:.45rem; font-weight:700; font-size:.8rem; white-space:nowrap; z-index:5; box-shadow:0 6px 24px rgba(2,132,199,.13); color:#B45309;"><i class="fab fa-js-square"></i> JavaScript</div>
-
-        <!-- Decorative ring -->
+        <div class="tech-badge tb-php"   style="position:absolute;top:33%;left:-10px;background:#fff;border:1.5px solid #E2E8F0;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#7377AD;animation:floatBadge1 4s ease-in-out infinite;"><i class="fab fa-php"></i> PHP</div>
+        <div class="tech-badge tb-html"  style="position:absolute;top:4%;left:5%;background:#fff;border:1.5px solid #E2E8F0;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#E34F26;animation:floatBadge1 4s .6s ease-in-out infinite;"><i class="fab fa-html5"></i> HTML</div>
+        <div class="tech-badge tb-mysql" style="position:absolute;bottom:22%;right:-10px;background:#fff;border:1.5px solid #E2E8F0;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#00618A;animation:floatBadge1 4s 1.2s ease-in-out infinite;"><i class="fas fa-database"></i> MySQL</div>
+        <div class="tech-badge tb-react" style="position:absolute;top:8%;right:2%;background:#fff;border:1.5px solid #E2E8F0;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#0284C7;animation:floatBadge1 4s 1.8s ease-in-out infinite;"><i class="fab fa-react"></i> React</div>
+        <div class="tech-badge tb-css"   style="position:absolute;bottom:12%;left:4%;background:#fff;border:1.5px solid #E2E8F0;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#264DE4;animation:floatBadge1 4s 2.4s ease-in-out infinite;"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="tech-badge tb-js"    style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);background:#FFFBEB;border:1.5px solid #FDE68A;border-radius:50px;padding:.5rem 1.1rem;display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.8rem;white-space:nowrap;z-index:5;box-shadow:0 6px 24px rgba(2,132,199,.13);color:#B45309;animation:floatBadge1 4s 3s ease-in-out infinite;"><i class="fab fa-js-square"></i> JavaScript</div>
         <div class="profile-ring">
           <div class="profile-img-wrap">
             <img src="profile img.jpeg" alt="Ramalakshmi J" class="profile-img" id="profileImg" />
-            <!-- Fallback avatar shown if image fails -->
-            <div class="profile-fallback" id="profileFallback">
-              <i class="fas fa-user"></i>
-            </div>
+            <div class="profile-fallback" id="profileFallback"><i class="fas fa-user"></i></div>
           </div>
         </div>
-
-        <!-- Decorative dots grid -->
         <div class="dots-grid" aria-hidden="true"></div>
       </div>
     </div>
-
-    <!-- Scroll cue -->
-    <a href="#about" class="scroll-cue" aria-label="Scroll down">
-      <span></span><span></span>
-    </a>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span><span></span></a>
   </section>
 
-  <!-- ─── About Section ─── -->
+  <!-- ─── About ─── -->
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
@@ -108,64 +85,35 @@
         <h2 class="section-title">About Me</h2>
         <div class="section-line"></div>
       </div>
-
       <div class="about-grid">
-        <!-- Bio -->
         <div class="about-bio" data-animate="fade-up">
-          <p>
-            Hi! My name is <strong>Ramalakshmi J</strong>, a Computer Science graduate passionate
-            about web development and software engineering.
-          </p>
-          <p>
-            I enjoy designing clean web applications with intuitive features and transforming
-            ideas into real-world solutions.
-          </p>
-          <p>
-            I have completed my Bachelor's degree in Computer Science and will be pursuing a
-            <strong>Master of Computer Applications (MCA)</strong> starting in August 2026.
-            I continue to enhance my skills through full-stack development projects, internships,
-            and continuous learning.
-          </p>
+          <p>Hi! My name is <strong>Ramalakshmi J</strong>, a Computer Science graduate passionate about web development and software engineering.</p>
+          <p>I enjoy designing clean web applications with intuitive features and transforming ideas into real-world solutions.</p>
+          <p>I have completed my Bachelor's degree in Computer Science and will be pursuing a <strong>Master of Computer Applications (MCA)</strong> starting in August 2026. I continue to enhance my skills through full-stack development projects, internships, and continuous learning.</p>
         </div>
-
-        <!-- Personal Details Cards -->
-        <div class="about-details" data-animate="fade-up" style="--delay: 0.15s">
+        <div class="about-details" data-animate="fade-up" style="--delay:0.15s">
           <div class="detail-card">
             <div class="detail-icon"><i class="fas fa-user"></i></div>
-            <div class="detail-info">
-              <span class="detail-label">Name</span>
-              <span class="detail-value">Ramalakshmi J</span>
-            </div>
+            <div class="detail-info"><span class="detail-label">Name</span><span class="detail-value">Ramalakshmi J</span></div>
           </div>
           <div class="detail-card">
             <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="detail-info">
-              <span class="detail-label">Location</span>
-              <span class="detail-value">Tirunelveli, Tamil Nadu</span>
-            </div>
+            <div class="detail-info"><span class="detail-label">Location</span><span class="detail-value">Tirunelveli, Tamil Nadu</span></div>
           </div>
           <div class="detail-card">
             <div class="detail-icon"><i class="fas fa-envelope"></i></div>
-            <div class="detail-info">
-              <span class="detail-label">Email</span>
-              <a href="mailto:jramalakshmi3021@gmail.com" class="detail-value detail-link">
-                jramalakshmi3021@gmail.com
-              </a>
-            </div>
+            <div class="detail-info"><span class="detail-label">Email</span><a href="mailto:jramalakshmi3021@gmail.com" class="detail-value detail-link">jramalakshmi3021@gmail.com</a></div>
           </div>
           <div class="detail-card">
             <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
-            <div class="detail-info">
-              <span class="detail-label">Degree</span>
-              <span class="detail-value">B.Sc. Computer Science</span>
-            </div>
+            <div class="detail-info"><span class="detail-label">Degree</span><span class="detail-value">B.Sc. Computer Science</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── Education Section ─── -->
+  <!-- ─── Education ─── -->
   <section class="section education" id="education">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
@@ -173,75 +121,36 @@
         <h2 class="section-title">Education</h2>
         <div class="section-line"></div>
       </div>
-
       <div class="timeline">
-
-        <!-- MCA -->
         <div class="timeline-item" data-animate="fade-up">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-          </div>
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
           <div class="timeline-card">
-            <div class="tc-header">
-              <div class="tc-icon"><i class="fas fa-university"></i></div>
-              <div class="tc-meta">
-                <span class="tc-period">Aug 2026 – Present</span>
-                <span class="tc-badge badge-current">Current</span>
-              </div>
-            </div>
+            <div class="tc-header"><div class="tc-icon"><i class="fas fa-university"></i></div><div class="tc-meta"><span class="tc-period">Aug 2026 – Present</span><span class="tc-badge badge-current">Current</span></div></div>
             <h3 class="tc-degree">Master of Computer Applications <span class="tc-short">(MCA)</span></h3>
-            <p class="tc-institution">
-              <i class="fas fa-map-marker-alt"></i>
-              Karpagam Academy of Higher Education, Coimbatore
-            </p>
+            <p class="tc-institution"><i class="fas fa-map-marker-alt"></i> Karpagam Academy of Higher Education, Coimbatore</p>
           </div>
         </div>
-
-        <!-- BSc -->
-        <div class="timeline-item" data-animate="fade-up" style="--delay: 0.1s">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-          </div>
+        <div class="timeline-item" data-animate="fade-up" style="--delay:0.1s">
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
           <div class="timeline-card">
-            <div class="tc-header">
-              <div class="tc-icon"><i class="fas fa-graduation-cap"></i></div>
-              <div class="tc-meta">
-                <span class="tc-period">Completed – 2026</span>
-              </div>
-            </div>
+            <div class="tc-header"><div class="tc-icon"><i class="fas fa-graduation-cap"></i></div><div class="tc-meta"><span class="tc-period">Completed – 2026</span></div></div>
             <h3 class="tc-degree">Bachelor of Science in Computer Science</h3>
-            <p class="tc-institution">
-              <i class="fas fa-map-marker-alt"></i>
-              St. John's College, Tirunelveli
-            </p>
+            <p class="tc-institution"><i class="fas fa-map-marker-alt"></i> St. John's College, Tirunelveli</p>
           </div>
         </div>
-
-        <!-- HSC -->
-        <div class="timeline-item" data-animate="fade-up" style="--delay: 0.2s">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-          </div>
+        <div class="timeline-item" data-animate="fade-up" style="--delay:0.2s">
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
           <div class="timeline-card">
-            <div class="tc-header">
-              <div class="tc-icon"><i class="fas fa-school"></i></div>
-              <div class="tc-meta">
-                <span class="tc-period">2021 – 2023</span>
-              </div>
-            </div>
+            <div class="tc-header"><div class="tc-icon"><i class="fas fa-school"></i></div><div class="tc-meta"><span class="tc-period">2021 – 2023</span></div></div>
             <h3 class="tc-degree">Higher Secondary Education <span class="tc-short">– Computer Science</span></h3>
-            <p class="tc-institution">
-              <i class="fas fa-map-marker-alt"></i>
-              Child Jesus Girls' Higher Secondary School, Tirunelveli
-            </p>
+            <p class="tc-institution"><i class="fas fa-map-marker-alt"></i> Child Jesus Girls' Higher Secondary School, Tirunelveli</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ─── Experience Section ─── -->
+  <!-- ─── Experience ─── -->
   <section class="section experience" id="experience">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
@@ -249,70 +158,268 @@
         <h2 class="section-title">Work Experience</h2>
         <div class="section-line"></div>
       </div>
-
       <div class="exp-grid">
-
-        <!-- Internship 1 -->
         <div class="exp-card" data-animate="fade-up">
-          <div class="exp-card-top">
-            <div class="exp-icon-wrap">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="exp-tag">Internship</div>
-          </div>
+          <div class="exp-card-top"><div class="exp-icon-wrap"><i class="fas fa-code"></i></div><div class="exp-tag">Internship</div></div>
           <div class="exp-body">
             <h3 class="exp-role">Web Developer Intern</h3>
-            <div class="exp-company">
-              <i class="fas fa-building"></i> Iconix Solution
-            </div>
-            <div class="exp-location">
-              <i class="fas fa-map-marker-alt"></i> Tirunelveli Junction, Tirunelveli
-            </div>
-            <div class="exp-year">
-              <i class="fas fa-calendar-alt"></i> 2025
-            </div>
-            <p class="exp-desc">
-              Gained hands-on experience in web development, working on responsive
-              interfaces and front-end solutions in a professional environment.
-            </p>
+            <div class="exp-company"><i class="fas fa-building"></i> Iconix Solution</div>
+            <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Tirunelveli Junction, Tirunelveli</div>
+            <div class="exp-year"><i class="fas fa-calendar-alt"></i> 2025</div>
+            <p class="exp-desc">Gained hands-on experience in web development, working on responsive interfaces and front-end solutions in a professional environment.</p>
           </div>
-          <div class="exp-card-footer">
-            <span class="exp-skill-tag">HTML/CSS</span>
-            <span class="exp-skill-tag">JavaScript</span>
-            <span class="exp-skill-tag">PHP</span>
+          <div class="exp-card-footer"><span class="exp-skill-tag">HTML/CSS</span><span class="exp-skill-tag">JavaScript</span><span class="exp-skill-tag">PHP</span></div>
+        </div>
+        <div class="exp-card" data-animate="fade-up" style="--delay:0.15s">
+          <div class="exp-card-top"><div class="exp-icon-wrap"><i class="fas fa-laptop-code"></i></div><div class="exp-tag">Internship</div></div>
+          <div class="exp-body">
+            <h3 class="exp-role">Web Developer Intern</h3>
+            <div class="exp-company"><i class="fas fa-building"></i> Indalyxo Solution</div>
+            <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Thiyagaraja Nagar, Tirunelveli</div>
+            <div class="exp-year"><i class="fas fa-calendar-alt"></i> 2026</div>
+            <p class="exp-desc">Contributed to web development projects, building and maintaining web application features using modern development practices.</p>
+          </div>
+          <div class="exp-card-footer"><span class="exp-skill-tag">React</span><span class="exp-skill-tag">MySQL</span><span class="exp-skill-tag">Web Dev</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-category" data-animate="fade-up">
+        <h3 class="skills-cat-title"><i class="fas fa-layer-group"></i> Technologies &amp; Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon html5"><i class="fab fa-html5"></i></div><span class="skill-name">HTML5</span></div>
+          <div class="skill-card"><div class="skill-icon css3"><i class="fab fa-css3-alt"></i></div><span class="skill-name">CSS3</span></div>
+          <div class="skill-card"><div class="skill-icon js"><i class="fab fa-js"></i></div><span class="skill-name">JavaScript</span></div>
+          <div class="skill-card"><div class="skill-icon react"><i class="fab fa-react"></i></div><span class="skill-name">React.js</span></div>
+          <div class="skill-card"><div class="skill-icon php"><i class="fab fa-php"></i></div><span class="skill-name">PHP</span></div>
+          <div class="skill-card"><div class="skill-icon mysql"><i class="fas fa-database"></i></div><span class="skill-name">MySQL</span></div>
+          <div class="skill-card"><div class="skill-icon github"><i class="fab fa-github"></i></div><span class="skill-name">GitHub</span></div>
+          <div class="skill-card"><div class="skill-icon vscode"><i class="fas fa-code"></i></div><span class="skill-name">VS Code</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-img-wrap">
+            <img src="project1.png" alt="Placement Training Project" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <h3 class="project-overlay-title">Placement Training</h3>
+                <p class="project-overlay-desc">A comprehensive campus placement preparation platform featuring mock interviews, aptitude tests, and company-specific training modules to help students master their placement journey.</p>
+                <div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Placement Training</h3>
+            <p class="project-short">Campus placement preparation platform with mock interviews &amp; aptitude training.</p>
+            <div class="project-links">
+              <a href="#" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
 
-        <!-- Internship 2 -->
-        <div class="exp-card" data-animate="fade-up" style="--delay: 0.15s">
-          <div class="exp-card-top">
-            <div class="exp-icon-wrap">
-              <i class="fas fa-laptop-code"></i>
+        <!-- Project 2 -->
+        <div class="project-card" data-animate="fade-up" style="--delay:0.12s">
+          <div class="project-img-wrap">
+            <img src="project2.png" alt="DreamTrip Project" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <h3 class="project-overlay-title">DreamTrip</h3>
+                <p class="project-overlay-desc">An AI-powered travel planning web app that generates personalised itineraries based on budget, destination, and trip duration — helping travellers plan their perfect journey in minutes.</p>
+                <div class="project-tags"><span>React</span><span>AI Integration</span><span>JavaScript</span><span>CSS</span></div>
+              </div>
             </div>
-            <div class="exp-tag">Internship</div>
           </div>
-          <div class="exp-body">
-            <h3 class="exp-role">Web Developer Intern</h3>
-            <div class="exp-company">
-              <i class="fas fa-building"></i> Indalyxo Solution
+          <div class="project-info">
+            <h3 class="project-title">DreamTrip</h3>
+            <p class="project-short">AI-powered travel planner that builds personalised itineraries in minutes.</p>
+            <div class="project-links">
+              <a href="#" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
             </div>
-            <div class="exp-location">
-              <i class="fas fa-map-marker-alt"></i> Thiyagaraja Nagar, Tirunelveli
-            </div>
-            <div class="exp-year">
-              <i class="fas fa-calendar-alt"></i> 2026
-            </div>
-            <p class="exp-desc">
-              Contributed to web development projects, building and maintaining
-              web application features using modern development practices.
-            </p>
-          </div>
-          <div class="exp-card-footer">
-            <span class="exp-skill-tag">React</span>
-            <span class="exp-skill-tag">MySQL</span>
-            <span class="exp-skill-tag">Web Dev</span>
           </div>
         </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-animate="fade-up" style="--delay:0.24s">
+          <div class="project-img-wrap">
+            <img src="project3.png" alt="GreenLeaf Smart Plant Care" class="project-img" />
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <h3 class="project-overlay-title">GreenLeaf – Smart Plant Care</h3>
+                <p class="project-overlay-desc">A smart gardening co-pilot web application for tracking, monitoring, and caring for plants. Features a plant library, water reminders, health diagnostics, and a growth tracker.</p>
+                <div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">GreenLeaf – Smart Plant Care</h3>
+            <p class="project-short">Smart gardening app with plant tracking, water reminders &amp; health monitoring.</p>
+            <div class="project-links">
+              <a href="#" class="proj-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications ─── -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Achievements</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card" data-animate="fade-up" onclick="openLightbox('cert1.jpg', 'Certification 1')">
+          <div class="cert-img-wrap">
+            <img src="cert1.jpg" alt="Certification 1" class="cert-img" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><i class=\'fas fa-certificate\'></i></div>'" />
+            <div class="cert-zoom"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge"><i class="fas fa-certificate"></i></span>
+            <p class="cert-label">Certificate of Achievement</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-animate="fade-up" style="--delay:0.1s" onclick="openLightbox('cert2.jpg', 'Certification 2')">
+          <div class="cert-img-wrap">
+            <img src="cert2.jpg" alt="Certification 2" class="cert-img" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><i class=\'fas fa-certificate\'></i></div>'" />
+            <div class="cert-zoom"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge"><i class="fas fa-certificate"></i></span>
+            <p class="cert-label">Certificate of Achievement</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-animate="fade-up" style="--delay:0.2s" onclick="openLightbox('cert3.jpg', 'Certification 3')">
+          <div class="cert-img-wrap">
+            <img src="cert3.jpg" alt="Certification 3" class="cert-img" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><i class=\'fas fa-certificate\'></i></div>'" />
+            <div class="cert-zoom"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-badge"><i class="fas fa-certificate"></i></span>
+            <p class="cert-label">Certificate of Achievement</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="cert-note" data-animate="fade-up" style="--delay:0.3s"><i class="fas fa-hand-pointer"></i> Click any certificate to view it in full size</p>
+    </div>
+  </section>
+
+  <!-- ─── Lightbox ─── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ─── Contact ─── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+        <p class="contact-sub" data-animate="fade-up" style="--delay:0.1s">I'm open to opportunities, collaborations, and new projects. Feel free to reach out!</p>
+      </div>
+
+      <div class="contact-grid" data-animate="fade-up" style="--delay:0.15s">
+
+        <!-- Contact info -->
+        <div class="contact-info-box">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <a href="mailto:jramalakshmi3021@gmail.com" class="contact-item-value">jramalakshmi3021@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-item-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/ramalakshmi-j" target="_blank" rel="noopener" class="contact-item-value">Ramalakshmi J</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-item-label">GitHub</span>
+              <a href="https://github.com/rama3021" target="_blank" rel="noopener" class="contact-item-value">rama3021</a>
+            </div>
+          </div>
+
+          <!-- Social icons row -->
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/_rama_lakshmi_j" target="_blank" rel="noopener" class="social-icon-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="social-icon-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/ramalakshmi-j" target="_blank" rel="noopener" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <!-- Download CV -->
+          <a href="resume.pdf" download class="btn btn-primary cv-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Let's work together" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.</p>
+        </form>
 
       </div>
     </div>
@@ -321,15 +428,24 @@
   <!-- ─── Footer ─── -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-copy">&copy; 2026 Ramalakshmi J. Crafted with <i class="fas fa-heart"></i> and code.</p>
+      <div class="footer-brand">
+        <svg width="26" height="30" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 0C10.4 0 1 9.4 1 21C1 32.6 10.4 42 22 42C26.2 42 30.1 40.7 33.3 38.5L43 50L43 21C43 9.4 33.6 0 22 0Z" fill="#38BDF8"/>
+          <text x="7" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">R</text>
+          <text x="24" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">J</text>
+        </svg>
+        <span class="footer-brand-text">RJ<span>.PORT</span></span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Ramalakshmi J &mdash; Crafted with <i class="fas fa-heart"></i> and code.</p>
       <div class="footer-social">
         <a href="mailto:jramalakshmi3021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ramalakshmi-j" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/rama3021" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/_rama_lakshmi_j" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
