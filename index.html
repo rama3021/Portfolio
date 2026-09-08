@@ -15,14 +15,18 @@
   <!-- ─── Navigation ─── -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
+
+      <!-- Logo -->
       <a href="#hero" class="nav-logo">
         <svg class="nav-logo-svg" viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="RJ Logo">
           <path d="M22 0C10.4 0 1 9.4 1 21C1 32.6 10.4 42 22 42C26.2 42 30.1 40.7 33.3 38.5L43 50L43 21C43 9.4 33.6 0 22 0Z" fill="#0284C7"/>
           <text x="7" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">R</text>
           <text x="24" y="30" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-1">J</text>
         </svg>
-        <span class="nav-logo-text">RJ<span class="nav-logo-dot">.</span>PORT</span>
+        <span class="nav-logo-text">RJ <span class="nav-logo-sep">|</span> DEV</span>
       </a>
+
+      <!-- Nav links (centre) -->
       <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -31,11 +35,20 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav-mobile-cta"><a href="#contact" class="btn-nav-cta">Let's Connect</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <!-- Right side: availability pill + CTA button -->
+      <div class="nav-right">
+        <span class="nav-availability">
+          <span class="nav-avail-dot"></span>Available for Opportunities
+        </span>
+        <a href="#contact" class="btn-nav-cta">Let's Connect</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
     </div>
   </nav>
 
@@ -43,7 +56,7 @@
   <section class="hero" id="hero">
     <div class="hero-container">
       <div class="hero-text" data-animate="fade-left">
-        <span class="hero-greeting">Hi, I'm</span>
+        <span class="hero-greeting"><h1>Hi, I'm</h1></span>
         <h1 class="hero-name">RAMALAKSHMI</h1>
         <p class="hero-title">CS Graduate &amp; Aspiring Full Stack Developer</p>
         <p class="hero-desc">I build responsive, user-friendly web applications and AI-powered solutions that solve real-world problems.</p>
